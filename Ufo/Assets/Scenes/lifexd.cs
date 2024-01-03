@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,11 @@ public class lifexd : MonoBehaviour
     }
     void Update()
     {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            Debug.LogError("KOTLET");
+        }
+
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
     }
